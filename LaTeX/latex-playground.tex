@@ -1,0 +1,43 @@
+%!TEX options = -shell-escape
+
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+
+\RequirePackage{silence}
+\WarningFilter{remreset}{The remreset package}
+\WarningFilter{latex}{Font shape declaration has incorrect series value `mc'.}
+
+% Main packages
+\usepackage[UKenglish]{babel}
+\usepackage[style=alphabetic,maxbibnames=99]{biblatex}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{csquotes}
+\usepackage[inline]{enumitem}
+\usepackage{nicefrac}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage[hidelinks]{hyperref}
+\usepackage[capitalize,noabbrev]{cleveref}
+
+% Bibliography
+\addbibresource{references.bib}
+
+\title{A \texorpdfstring{\LaTeX}{LaTeX} playground}
+\author{Sam Adam-Day, ???}
+\date{\today}
+
+\begin{document}
+
+	\maketitle
+
+    \section{A fun book}
+
+	See \cite{Conway2001Osurreals}
+
+	\printbibliography
+
+\end{document}
